@@ -1,6 +1,6 @@
 set -e
 
-host='localhost:5000'
+host='localhost:5211'
 
 routes="
 /
