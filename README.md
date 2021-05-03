@@ -146,8 +146,6 @@ There are two steps:
     1. This query shows the number of webpages loaded / hour:
        ```
        select * from metahtml_rollup_insert order by insert_hour desc limit 100;
-        hll_count |  url  | hostpathquery | hostpath | host  |      insert_hour
------------+-------+---------------+----------+-------+------------------------
          2 | 58028 |         56442 |    54057 | 46134 | 2021-05-03 01:00:00+00
        ```
 
