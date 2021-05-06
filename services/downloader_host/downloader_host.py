@@ -79,8 +79,12 @@ def process_cdx_url(connection, url, batch_size=100, source='cc', **kwargs):
 
             # FIXME: extract the metainfo using the metahtml library
             meta = metahtml.parse(html, url)
-            pspacy_title = pspacy.lemmatize(meta["language"]["best"]["value"], meta["title"]["best"]["value"])
-            pspacy_content = pspacy.lemmatize(meta["language"]["best"]["value"], meta["title"]["best"]["value"])
+            try:
+                pspacy_title = pspacy.lemmatize(meta['language']['best']['value'], meta['title']['best']['value'])
+                pspacy_content = pspacy.lemmatize(meta['language']['best']['value'], meta['title']['best']['value'])
+            except TypeError:
+                pspacy_title = None
+                pspacy_content = None
 
             # append to the batch
             batch.append({
