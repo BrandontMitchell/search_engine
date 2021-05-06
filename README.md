@@ -171,7 +171,7 @@ There are two steps:
           ---+---------------+----------+----------------------------
        13442 |         13283 |    13438 | com,pinterest)
          650 |           672 |      641 | com,nytimes)
-         359 |         13283 |    13438 | com,bing)
+         359 |           366 |      361 | com,bing)
           71 |            71 |       71 | com,theguardian)
           54 |            54 |       54 | com,fivethirtyeight)
           23 |            23 |       23 | com,google,drive)
